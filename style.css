@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #000;
+    /* Align items to center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moon {
+    width: 70px;
+    height: 70px;
+    border: 12px solid #fff;
+    border-top: transparent;
+    border-left: transparent;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Optional */
+.moon::after {
+    position: absolute;
+    content: '';
+    top: 14%;
+    right: 0;
+    background: #ccc;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
